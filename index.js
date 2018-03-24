@@ -90,6 +90,8 @@ bot.on("message", message => {
            .addField('= ___Eğlence Komutları___ =', 'r!kurabiye = Size kurabiye verir.\nr!çay-iç = Sıcak Bir Çay Verir. ')
 
            .addField('•__Yapımcı__', 'Batu#2016')
+        
+            .addField('•__Yaparken Yardım Eden__','🔥Tufan Şahin🔥#7771')
 
            .setColor(0x6a5acd)
 
