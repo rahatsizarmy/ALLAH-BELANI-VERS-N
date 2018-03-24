@@ -130,6 +130,20 @@ bot.on("message", message => {
         
         return message.channel.sendEmbed(embed)
     }
+    
+        if (message.content === prefix + "lahmacun") {
+        const embed = new Discord.RichEmbed()
+
+        .setAuthor(message.author.username, message.author.avatarURL)
+
+        .addField(message.author.username,"***Güzel Bir Lahmacun Yemekte!***")
+
+        .setImage("http://ladyandpups.com/wp-content/uploads/2014/10/lahmacun-and-ayran21.jpg")
+
+            .setColor(0x97ffff)
+        
+        return message.channel.sendEmbed(embed)
+    }
 
 
     if (message.content === prefix + "bot-bilgi") {
