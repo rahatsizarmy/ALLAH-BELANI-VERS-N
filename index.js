@@ -27,9 +27,9 @@ bot.on("message", message => {
 
            .addField('= ___Eğlence Komutları___ =', 'r!kurabiye = Size kurabiye verir.\nr!çay-iç = Sıcak Bir Çay Verir.\nr!lahmacun = Size enfes bir lahmacun verir. ')
 
-           .addField('•__Yapımcı__', 'Batu#2016')
+           .addField('•__Yapımcı__', '<@335082465561673728>')
 
-           .addField('•__Yaparken Yardım Eden__','🔥Tufan Şahin🔥#7771')
+           .addField('•__Yaparken Yardım Eden__','<@406115661790707719>')
         
            .setColor(0x6a5acd)
 
