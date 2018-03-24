@@ -14,6 +14,27 @@ bot.on("ready", () => {
 
 bot.on("message", message => {
     
+        if (message.content === prefix + "yardım") {
+        const embed = new Discord.RichEmbed()       
+
+        .setAuthor(message.author.username, message.author.avatarURL)
+           
+           .addField('= ___Moderasyan Komutları___ =','***YAKINDA***')
+
+           .addField(' = ___Bot Komutları___ =','r!yardım = Botun Bütün komutları gösterir.\nr!sunucbilgi = Sunucu hakkındabilgi verir. \nr!bot-bilgi = Bot hakkında bilgi verir.\nr+ping = Botun pingini gösterir.')
+
+           .addField('= ___Kullanıcı Komutları___ =', 'r!avatar = __Komutu kullanan kişinin avatarını gösterir.__\nr!bdavet = Botun davet linkini gösterir. \nr!dsunucu = Botun destek sunucusunu gösterir')
+
+           .addField('= ___Eğlence Komutları___ =', 'r!kurabiye = Size kurabiye verir.\nr!çay-iç = Sıcak Bir Çay Verir.\nr!lahmacun = Size enfes bir lahmacun verir. ')
+
+           .addField('•__Yapımcı__', 'Batu#2016')
+
+           .addField('•__Yaparken Yardım Eden__','🔥Tufan Şahin🔥#7771')
+        
+           .setColor(0x6a5acd)
+
+        return message.channel.sendEmbed(embed)
+    }
 
     if (message.content === prefix + "ping") {
         message.reply("**Benim Pingim `" + bot.ping + "` ms 🏓** ");
@@ -76,27 +97,6 @@ bot.on("message", message => {
         return message.channel.sendEmbed(embed)
     }
 
-    if (message.content === prefix + "yardım") {
-        const embed = new Discord.RichEmbed()       
-
-        .setAuthor(message.author.username, message.author.avatarURL)
-           
-           .addField('= ___Moderasyan Komutları___ =','***YAKINDA***')
-
-           .addField(' = ___Bot Komutları___ =','r!yardım = Botun Bütün komutları gösterir.\nr!sunucbilgi = Sunucu hakkındabilgi verir. \nr!bot-bilgi = Bot hakkında bilgi verir.\nr+ping = Botun pingini gösterir.')
-
-           .addField('= ___Kullanıcı Komutları___ =', 'r!avatar = Etiketlenen kişinin avatarını gösterir.\nr!bdavet = Botun davet linkini gösterir. \nr!dsunucu = Botun destek sunucusunu gösterir')
-
-           .addField('= ___Eğlence Komutları___ =', 'r!kurabiye = Size kurabiye verir.\nr!çay-iç = Sıcak Bir Çay Verir. ')
-
-           .addField('•__Yapımcı__', 'Batu#2016')
-        
-            .addField('•__Yaparken Yardım Eden__','🔥Tufan Şahin🔥#7771')
-
-           .setColor(0x6a5acd)
-
-        return message.channel.sendEmbed(embed)
-    }
     if (message.content === prefix + "dsunucu") {
         const embed = new Discord.RichEmbed()
 
