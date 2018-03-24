@@ -14,24 +14,24 @@ bot.on("ready", () => {
 
 bot.on("message", message => {
     
-        if (message.content === prefix + "yardım") {
+    if (message.content === prefix + "yardım") {
         const embed = new Discord.RichEmbed()       
 
         .setAuthor(message.author.username, message.author.avatarURL)
            
-           .addField('= ___Moderasyan Komutları___ =','***YAKINDA***')
+           .addField('► ___Moderasyan Komutları___ ◄','***YAKINDA***')
 
-           .addField(' = ___Bot Komutları___ =','r!yardım = Botun Bütün komutları gösterir.\nr!sunucbilgi = Sunucu hakkındabilgi verir. \nr!bot-bilgi = Bot hakkında bilgi verir.\nr+ping = Botun pingini gösterir.')
+           .addField('► = ___Bot Komutları___ ◄','r!yardım = Botun Bütün komutları gösterir.\nr!sunucbilgi = Sunucu hakkındabilgi verir. \nr!bot-bilgi = Bot hakkında bilgi verir.\nr+ping = Botun pingini gösterir.')
 
-           .addField('= ___Kullanıcı Komutları___ =', 'r!avatar = __Komutu kullanan kişinin avatarını gösterir.__\nr!bdavet = Botun davet linkini gösterir. \nr!dsunucu = Botun destek sunucusunu gösterir')
+           .addField(' ►___Kullanıcı Komutları___ ◄', 'r!avatar = __Komutu kullanan kişinin avatarını gösterir.__\nr!bdavet = Botun davet linkini gösterir. \nr!dsunucu = Botun destek sunucusunu gösterir')
 
-           .addField('= ___Eğlence Komutları___ =', 'r!kurabiye = Size kurabiye verir.\nr!çay-iç = Sıcak Bir Çay Verir.\nr!lahmacun = Size enfes bir lahmacun verir. ')
+           .addField('► ___Eğlence Komutları___ ◄', 'r!kurabiye = Size kurabiye verir.\nr!çay-iç = Sıcak Bir Çay Verir.\nr!lahmacun = Size enfes bir lahmacun verir.\nkola-iç = Kola içersiniz\nr!sigara-iç = Sigara içersiniz\nr!çak = Çakmanızı sağlar. ')
 
-           .addField('•__Yapımcı__', '<@335082465561673728>')
+           .addField('•__Yapımcı__', '► <@335082465561673728>')
 
-           .addField('•__Yaparken Yardım Eden__','<@406115661790707719>')
-        
-           .setColor(0x9966ff)
+           .addField('•__Yaparken Yardım Eden__','► <@406115661790707719>')
+
+           .setColor(0x6a5acd)
 
         return message.channel.sendEmbed(embed)
     }
@@ -116,7 +116,47 @@ bot.on("message", message => {
         
         return message.channel.sendEmbed(embed)
     }
+        if (message.content === prefix + "çak") {
+        const embed = new Discord.RichEmbed()
 
+        .setAuthor(message.author.username, message.author.avatarURL)
+
+        .addField(message.author.username,"***Çak Bakalım!***")
+
+        .setImage("https://media2.giphy.com/media/sRKe8carXFbQ9VEBNm/giphy.gif")
+
+            .setColor(0x97ffff)
+        
+        return message.channel.sendEmbed(embed)
+    }
+    if (message.content === prefix + "kola-iç") {
+        const embed = new Discord.RichEmbed()
+
+        .setAuthor(message.author.username, message.author.avatarURL)
+
+        .addField(message.author.username,"***Hay Aksi İçerken Üzerine Döküldü!***")
+
+        .setImage("https://media.giphy.com/media/IaANIhoCji2zu/giphy.gif")
+
+            .setColor(0x97ffff)
+        
+        return message.channel.sendEmbed(embed)
+    } 
+
+        if (message.content === prefix + "sigara-iç") {
+        const embed = new Discord.RichEmbed()
+
+        .setAuthor(message.author.username, message.author.avatarURL)
+
+        .addField(message.author.username,"***Para bol nasıl olsa yak babam yak!***")
+
+        .setImage("https://media2.giphy.com/media/2dI7FZreQAp44/giphy.gif")
+
+            .setColor(0x97ffff)
+        
+        return message.channel.sendEmbed(embed)
+    } 
+    
     if (message.content === prefix + "çay-iç") {
         const embed = new Discord.RichEmbed()
 
@@ -145,6 +185,20 @@ bot.on("message", message => {
         return message.channel.sendEmbed(embed)
     }
 
+    
+    if (message.content === prefix + "kola-iç") {
+        const embed = new Discord.RichEmbed()
+
+        .setAuthor(message.author.username, message.author.avatarURL)
+
+        .addField(message.author.username,"***Hay Aksi İçerken Üzerine Döküldü!***")
+
+        .setImage("https://media.giphy.com/media/IaANIhoCji2zu/giphy.gif")
+
+            .setColor(0x97ffff)
+        
+        return message.channel.sendEmbed(embed)
+    }
 
     if (message.content === prefix + "bot-bilgi") {
         const embed = new Discord.RichEmbed()
