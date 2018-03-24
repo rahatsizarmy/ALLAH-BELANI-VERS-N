@@ -25,7 +25,7 @@ bot.on("message", message => {
 
            .addField(' ►___Kullanıcı Komutları___ ◄', 'r!avatar = Etiketlenen kişinin avatarını gösterir.\nr!bdavet = Botun davet linkini gösterir. \nr!dsunucu = Botun destek sunucusunu gösterir')
 
-           .addField('► ___Eğlence Komutları___ ◄', 'r!kurabiye = Size kurabiye verir.\nr!çay-iç = Sıcak Bir Çay Verir.\nr!lahmacun = Size enfes bir lahmacun verir.\nkola-iç = Kola içersiniz\nr!sigara-iç = Sigara içersiniz\nr!çak = Çakmanızı sağlar. ')
+           .addField('► ___Eğlence Komutları___ ◄', 'r!kurabiye = Size kurabiye verir.\nr!çay-iç = Sıcak Bir Çay Verir.\nr!lahmacun = Size enfes bir lahmacun verir.\nr!kola-iç = Kola içersiniz\nr!sigara-iç = Sigara içersiniz\nr!çak = Çakmanızı sağlar. ')
 
            .addField('•__Yapımcı__', '► <@335082465561673728>')
 
