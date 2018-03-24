@@ -18,7 +18,15 @@ bot.on("message", message => {
     if (message.content === prefix + "ping") {
         message.reply("**Benim Pingim `" + bot.ping + "` ms 🏓** ");
       }
- 
+      if (message.content.startsWith("r!avatar")) {
+        let user = message.mentions.users.first();
+        if (message.mentions.users.size < 1) return message.reply('Kimin Avatarını İstediğini Yazmalısını').catch(console.error);
+        const embed = new Discord.RichEmbed()
+        .setColor(0x000001)
+        .setTimestamp()
+        embed.setImage(`${user.avatarURL}`)
+        return message.channel.sendEmbed(embed);
+    }
       if (message.content.toLowerCase() === "sa") {    
         message.reply("**as** ");
         message.react("👋🏼")
@@ -87,17 +95,6 @@ bot.on("message", message => {
 
         return message.channel.sendEmbed(embed)
     }
-    
-    if (message.content === prefix + "avatar") {
-        const embed = new Discord.RichEmbed()
-
-        .setThumbnail(message.author.avatarURL)
-
-            .setColor(0x97ffff)
-        
-        return message.channel.sendEmbed(embed)
-    }
-
     if (message.content === prefix + "dsunucu") {
         const embed = new Discord.RichEmbed()
 
@@ -125,7 +122,7 @@ bot.on("message", message => {
 
         .addField(message.author.username,"***Sıcak Bir Çay İçiyor***")
 
-        .setThumbnail("https://geekyapar.com/wp-content/uploads/2017/01/%C3%87ay-Tarihi-5-1.jpg")
+        .setImage("https://geekyapar.com/wp-content/uploads/2017/01/%C3%87ay-Tarihi-5-1.jpg")
 
             .setColor(0x97ffff)
         
@@ -159,7 +156,6 @@ bot.on("message", message => {
         message.channel.sendMessage(`Canım gel buraya sana kurabiye vereceğim! <@${message.author.id}>`)
         message.react("🍪")
     }
-
 });
 
 bot.on("message", message => {
