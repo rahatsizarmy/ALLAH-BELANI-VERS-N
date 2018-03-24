@@ -31,7 +31,7 @@ bot.on("message", message => {
 
            .addField('•__Yaparken Yardım Eden__','<@406115661790707719>')
         
-           .setColor(0x6a5acd)
+           .setColor(0x9966ff)
 
         return message.channel.sendEmbed(embed)
     }
