@@ -22,7 +22,7 @@ bot.on("message", message => {
         let user = message.mentions.users.first();
         if (message.mentions.users.size < 1) return message.reply('Kimin Avatarını İstediğini Yazmalısını').catch(console.error);
         const embed = new Discord.RichEmbed()
-        .setColor(0x000001)
+        .setColor(0x00BFFF)
         .setTimestamp()
         embed.setImage(`${user.avatarURL}`)
         return message.channel.sendEmbed(embed);
