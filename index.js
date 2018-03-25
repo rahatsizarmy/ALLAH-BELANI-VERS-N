@@ -237,5 +237,5 @@ bot.on("message", message => {
     }
 });
 
-bot.login("NDI3MDc5NDQ4OTUzNjE4NDMy.DZfUPw.22YMsxizZtq9ZU6p62KgZu64icI")
+bot.login("NDI3MDc5NDQ4OTUzNjE4NDMy.DZkpiA.GINzXv-kgX6KcoSZ6RfIp4-JsKc")
 
