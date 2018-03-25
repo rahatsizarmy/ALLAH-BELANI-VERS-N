@@ -21,7 +21,7 @@ bot.on("message", message => {
            
            .addField('► ___Moderasyan Komutları___ ◄','***YAKINDA***')
 
-           .addField('► = ___Bot Komutları___ ◄','r!yardım = Botun Bütün komutları gösterir.\nr!sunucbilgi = Sunucu hakkındabilgi verir. \nr!bot-bilgi = Bot hakkında bilgi verir.\nr+ping = Botun pingini gösterir.')
+           .addField('► = ___Bot Komutları___ ◄','r!yardım = Botun Bütün komutları gösterir.\nr!sunucbilgi = Sunucu hakkındabilgi verir. \nr!bot-bilgi = Bot hakkında bilgi verir.\nr!ping = Botun pingini gösterir.')
 
            .addField(' ►___Kullanıcı Komutları___ ◄', 'r!avatar = Etiketlenen kişinin avatarını gösterir.\nr!bdavet = Botun davet linkini gösterir. \nr!dsunucu = Botun destek sunucusunu gösterir')
 
